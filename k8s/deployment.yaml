@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: insurance-prediction
-        image: adi9930/insurance-app:latestv2   # ✅ check your Docker Hub username
+        image: adi9930/insurance-app:v3   # ✅ check your Docker Hub username
         ports:
         - containerPort: 8501                  # ✅ Streamlit default port
