@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: insurance-prediction-deployment
+  labels:
+    app: insurance-prediction
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: insurance-prediction
+  template:              # ✅ should be here (same level as selector)
+    metadata:
+      labels:
+        app: insurance-prediction
+    spec:
+      containers:
+      - name: insurance-prediction
+        image: adi9930/insurance-app   # ✅ check your Docker Hub username
+        ports:
+        - containerPort: 8501                  # ✅ Streamlit default port
