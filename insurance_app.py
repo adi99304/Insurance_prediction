@@ -13,7 +13,7 @@ import plotly.express as px
 
 
 st.set_page_config(page_title="📊 Insurance Data Analysis & Model Comparison", layout="wide")
-st.title("📊 Insurance Data Analysis & Model Comparison")
+st.title("📊 Insurance Data Analysis deployment V2")
 
 
 st.sidebar.header("Upload Data & Options")
