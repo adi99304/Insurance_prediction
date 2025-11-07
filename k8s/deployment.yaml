@@ -5,7 +5,7 @@ metadata:
   labels:
     app: insurance-prediction
 spec:
-  replicas: 3
+  replicas: 7
   selector:
     matchLabels:
       app: insurance-prediction
